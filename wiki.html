@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Mein Studium an der THM Gießen</title>
 
     <!-- Bootstrap core CSS -->
  <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,35 +41,21 @@
           </button>
           
 <!-- Navigationbar verschiedene Reiter  -->
-  <div class="collapse navbar-collapse" id="navHeaderCollapse">
+ <div class="collapse navbar-collapse" id="navHeaderCollapse">
     <ul class="nav navbar-nav">
     <!-- WILLKOMMEN -->
     <li aria-label="Willkommen"><a href="index.html">Willkommen <span class="sr-only">(current)</span></a></li>
       <!--  add links as dropdown-meue -->
-      <li class="dropdown">
-        <!-- add dropdown name and arrow--> 
-        <!-- ABOUT -->
-        <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >About<em class="caret"></em></a>
-          <ul class="dropdown-menu" role="menu">
-            <li aria-label="Me"><a href="about.html#Ich">...das bin ich.</a></li>
-            <li aria-label="THM"><a href="about.html#THM Gießen">THM Gießen</a></li>
-            <li aria-label="Karte"><a href="about.html#Map">Karte</a></li>
-          </ul>
-      </li> <!-- ende dropdown -->
+      <li aria-label="About"><a href="about.html" >About</a></li>
 
-      <li class="dropdown"> <!-- DAS STUIDUM -->
-        <!-- add dropdown name and arrow--> 
-        <a href="studium.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >Das Studium<em class="caret"></em></a>
-          <ul class="dropdown-menu" role="menu">
-            <li aria-label="Me"><a href="studium.html#Kurse" >Kurse im WS15/16</a></li>
-            <li aria-label="THM"><a href="studium.html#Modulplan" >Modulplan</a></li>
-          </ul>
-      </li> <!-- ende dropdown -->
+      <li aria-label="Studium"><a href="studium.html" >Das Studium</a></li>
 
     <!-- WIKI-->
-    <li aria-label="Suchformular"><a href="wiki.html" >Wikipedia Suchformular</a></li>  <!-- WIKI-->
+    <li class="active" aria-label="Suchformular"><a href="wiki.html" >Wikipedia Suchformular</a></li>  <!-- WIKI-->
+          <li aria-label="Requests"><a href="requests.html" >Pull-Requests</a></li>   <!-- REQUESTS -->      
+
     <!-- CODECADEMY-->    
-    <li class="active" aria-label="CodeCademy Achievements"><a href="codecademy.html">Codecademy Achievements</a></li>
+    <li aria-label="CodeCademy Achievements"><a href="codecademy.html">Codecademy Achievements</a></li>
     <!-- IMPRESSUM-->
     <li aria-label="Impressum"><a href="impressum.html" >Impressum</a></li>   <!-- IMPRESSUM -->      
       </ul>
@@ -87,20 +73,20 @@
     </div>
 
 <div class="container"  
- 
 
 
 <section role="search">
 		<div class="container">
+
 			<form action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank" id="searchForm">
 		  		
 		    		<legend>Wikipediasuche</legend>
 		    		<label for="search">Suchbegriff:</label>
 		    		<input  type="text" class="searchbar" name="search" id="search" value="" required/>
 		    		<span class="input-group-btn"></br>
-		    			<button type="submit" class="btn btn-default" name="go"  aria-label="Artikel">Artikel</button>
-		    			<button type="submit" class="btn btn-default" name="fulltext"   aria-label="Volltextsuche">Volltextsuche</button>
-		    		</span>
+		    		 <input class="btn btn-default btn-style" role="button" type="submit" name="go" value="Artikelsuche" />
+                  <input class="btn btn-default btn-style" role="button" type="submit" name="fulltext" value="Volltextsuche" />
+               	</span>
 		  			  		
 			</form>
 			 
@@ -108,11 +94,9 @@
 	</section>
 
 
-
-
 	<div class="footer">
 		<div class="container">
-			<p><a href="http://wave.webaim.org/report#/http://lindafabian.cloudcontrolled.com/wiki.html#" title="Explanation of WCAG 2.0 Level Triple-A Conformance">
+			<p><a href="http://wave.webaim.org/report#/http://lindathm2.cloudcontrolled.com/wiki.html#" title="Explanation of WCAG 2.0 Level Triple-A Conformance">
   				<img height="32" width="88" src="http://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
   			</a></p>
 		</div>
@@ -127,7 +111,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2014</p>
+       
       </footer>
     </div> <!-- /container -->
 
