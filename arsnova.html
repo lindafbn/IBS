@@ -97,6 +97,25 @@ function doit()
 <p1> Abfrage</p1>
 <input type="button" value="hello" onclick="doit();">
 <p>Es sollte sich etwas tun</p>
+<h2>AJAX</h2>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "https://arsnova.eu/api/statistics/", true);
+  xhttp.send();
+}
+</script>
 <script language="javascript" type="text/javascript">
 <!--
 var xmlHttpObject = new XMLHttpRequest();
