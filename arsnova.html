@@ -30,7 +30,16 @@
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/home/linda/IBS/js/arsnova.js" type="text/javascript"></script>
+    <script src="js/arsnova.js" type="text/javascript"></script>
+    <script type="text/javascript">
+function doit()
+{
+  var scr = document.createElement('script');
+  scr.type = "text/javascript";
+  scr.src = "arsnova.js";
+  document.body.appendChild(scr);
+}
+</script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -86,6 +95,7 @@
     </div>
 <div>
 <p1> Abfrage</p1>
+<input type="button" value="hello" onclick="doit();">
 <script language="javascript" type="text/javascript">
 <!--
 var xmlHttpObject = new XMLHttpRequest();
