@@ -29,8 +29,9 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/arsnova.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="js/arsnova.js"></script>
  
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -85,14 +86,108 @@
         <h1>Arsnova Statistik</h1>
     </div>
     </div>
-<div>
-<h2>Request</h2>
+<div class="container">
+<script type="text/javascript">
+    loadDoc();
+    setInterval("loadDoc()", 30000);
+</script>
 
-<button type="button" onclick="loadDoc()">Get Statistik</button>
+<head>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-<p id="demo"></p>
+</head>
+<body>
+<div id="Übersicht" style="height: 300px; width: 100%;"></div>
+<div id="Fragen" style="height: 300px; width: 100%;"></div>
+<div id="Sessions" style="height: 300px; width: 100%;"></div>
+<div id="Aktuell" style="height: 300px; width: 100%;"></div>
+
+</body>
+
+  <h2>Lesbar...</h2>
+
+      <div class="row">
+  <div class="col-md-4">
+   <h4>Antworten</h4>
+   <p id="antworten"></p>
+  </div>
+        
+  <div class="col-md-4">
+   <h4>Hörsaalfragen</h4>
+   <p id="hoersaalfragen"></p>
+  </div>
+
+  <div class="col-md-4">
+   <h4>Vorbereitungsfragen</h4>
+   <p id="vorbereitungsfragen"></p>
+  </div>
+  </div>
+
+   <div class="row">
+  <div class="col-md-4">
+   <h4>Offene Sessions</h4>
+   <p id="offenesitzungen"></p>
+  </div>
+        
+  <div class="col-md-4">
+   <h4>Geschlossene Sitzungen</h4>
+   <p id="geschlossenesitzungen"></p>
+  </div>
+
+  <div class="col-md-4">
+   <h4>Ersteller</h4>
+   <p id="ersteller"></p>
+  </div>
+  </div>
+
+   <div class="row">
+  <div class="col-md-4">
+   <h4>Aktive Nutzer</h4>
+   <p id="aktivenutzer"></p>
+  </div>
+        
+  <div class="col-md-4">
+   <h4>Aktive Studenten</h4>
+   <p id="aktivestudenten"></p>
+  </div>
+
+  <div class="col-md-4">
+   <h4>Eingeloggte Nutzer</h4>
+   <p id="eingeloggtenutzer"></p>
+  </div>
+  </div>
+
+
+   <div class="row">
+  <div class="col-md-4">
+   <h4>Zwischenfragen</h4>
+   <p id="zwischenfragen"></p>
+  </div>
+        
+  <div class="col-md-4">
+   <h4>Konzeptfragen</h4>
+   <p id="konzeptfragen"></p>
+  </div>
+
+  <div class="col-md-4">
+   <h4>Fragen</h4>
+   <p id="fragen"></p>
+  </div>
+
+  <div class="col-md-4">
+   <h4>Sitzungen</h4>
+   <p id="sitzungen"></p>
+  </div>
+  </div>
+
+
 
 </div>
+
+
+<!--<script>
+setInterval("alert('blubb');", 2000);</script> -->
+
 
   </body>
 </html>
